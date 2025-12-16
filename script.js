@@ -9,7 +9,7 @@ const clearChatButton = document.getElementById("deleteButton");
 let currentUserMessage = null;
 let isGeneratingResponse = false;
 
-const GOOGLE_API_KEY = "AIzaSyBzt3m51Gk6A430KJxbpjzpOFlXTgQkw_U";
+const GOOGLE_API_KEY = "YOUR_API_KEY";
 const API_REQUEST_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${GOOGLE_API_KEY}`;
 
 // Load saved data from local storage
@@ -182,7 +182,7 @@ const displayLoadingAnimation = () => {
     const loadingHtml = `
 
         <div class="message__content">
-            <img class="message__avatar" src="assets/gemini.png" alt="Gemini avatar">
+            <img class="message__avatar" src="assets/gemini." alt="Gemini avatar">
             <p class="message__text"></p>
             <div class="message__loading-indicator">
                 <div class="message__loading-bar"></div>
